@@ -1,0 +1,81 @@
+body {
+    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-position: -28% 20%, 120% -40%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 800px;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    height: auto;
+    border: 0.1px solid transparent;
+    border-radius: 16px;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: white;
+}
+
+.submain {
+    position: relative;
+}
+
+.d1 {
+    position: static;
+    background-image: url('images/bg-pattern-card.svg');
+    background-size: cover;
+    width: inherit;
+    height: 10rem;
+    border-radius: 16px 16px 0 0;
+}
+
+.prf {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.d2 {
+    margin-top: 18%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.d2 h1 span {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 400;
+}
+
+.d3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.dd {
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    
+    body {
+        background-position: 900% 15%, -900% -120%;
+        background-size: 400px;
+        background-clip: content-box;
+    }
+    
+    .main {
+        width: 20rem;
+    }
+}
+
